@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tables</title>
+	<title>Registration</title>
 </head>
 <body bgcolor="#cccccc">
 
@@ -25,6 +25,12 @@
                             <a href="download.html">Download</a>
                         </td>
                     </tr>
+
+                    <tr>
+                        <td>
+                            <a href="registration.html">Registration</a>
+                        </td>
+                    </tr>
                 </table>
 
             </td>
@@ -34,7 +40,19 @@
         </tr>
         <tr>
             <td height="400" valign="top">
-                main Content will be here.
+
+                <form action="#" name="Login" method="POST">
+                    <fieldset>
+                        <legend>Login</legend>
+
+                        <input type="text" name="username" size="15" maxlength="50" placeholder="UserName" required="required" />
+
+                        <input type="password" name="password" size="15" maxlength="50" placeholder="Password" required="required"/>
+
+                        <input type="submit" name="submit" value="Login"/>
+                    </fieldset>
+                </form>
+
             </td>
         </tr>
         <tr>
@@ -42,48 +60,5 @@
             </td>
         </tr>
     </table>
-
-
-
-
-    <table bgcolor="#eeccee" border="1" cellspacing="10" cellpadding="10" width="960px" align="center">
-
-    	<caption align="bottom">Name list of students</caption>	
-    	<tr>
-    		<th>SN</th>
-    		<th>Name</th>
-    		<th>Address</th>
-    	</tr>
-    	<tr>
-    		<td>1</td>
-    		<td>Anugya Sharma</td>
-    		<td>Kathmandu</td>
-    	</tr>
-    	<tr>
-    		<td>2</td>
-    		<td>Aparmeya Neoupane</td>
-    		<td>Kathmandu</td>
-    	</tr>
-    </table>
-
-
-    <table border="1">
-    	<tr>
-    		<td colspan="2">Banner</td>
-    	</tr>
-    	<tr>
-    		<td colspan="2">TOP Menu</td>
-    	</tr>
-    	<tr>
-    		<td>Left Side Bar</td>
-    		<td>Main Content</td>
-    	</tr>
-    	<tr>
-    		<td colspan="2">
-    		Footer
-    		</td>
-    	</tr>
-    </table>
-
 </body>
 </html>
