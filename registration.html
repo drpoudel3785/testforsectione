@@ -38,20 +38,81 @@
                    <img src="images/banner.jpg" alt="banner" title="banner" width="810px"/> 
             </td>
         </tr>
-        <tr>
-            <td height="400" valign="top">
+        
 
+         <tr>
+            <td height="400" valign="top" colspan="2">
                 <form action="#" name="Login" method="POST">
                     <fieldset>
                         <legend>Login</legend>
+                            <input type="text" name="username" size="15" maxlength="50" placeholder="UserName" required="required" /> 
 
-                        <input type="text" name="username" size="15" maxlength="50" placeholder="UserName" required="required" />
-
+                       
                         <input type="password" name="password" size="15" maxlength="50" placeholder="Password" required="required"/>
-
+                        
                         <input type="submit" name="submit" value="Login"/>
+                      
                     </fieldset>
                 </form>
+
+
+                  <form action="#" name="register" method="POST">
+                    <fieldset>
+                        <legend>Register</legend>
+                        <label>UserName</label>
+
+                        <input type="text" name="username" size="15" maxlength="50" placeholder="UserName" required="required" />
+                        <br/>
+
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="you@domain.com" required="required" />
+                        <br/>
+
+                        <label>Password</label>
+
+                        <input type="password" name="password" size="15" maxlength="50" placeholder="Password" required="required"/>
+                        <br/>
+
+                        <label>Courses</label>
+                        <input type="checkbox" name="php" value="php" checked="checked" />PHP
+                        <input type="checkbox" name="java" value="java" />Java
+                        <input type="checkbox" name="asp" value="asp" >ASP
+                        <br/>
+
+                        <label>Gender</label>
+                        <input type="radio" name="gender" value="M" / >Male
+                        <input type="radio" name="gender" value="F" checked="checked"/>FeMale
+                        <input type="radio" name="gender" value="O"/>Other
+                        <br/>
+
+                        <label>Photo</label>
+                        <input type="file" name="photo" size="560000"/>
+                        <br/>
+
+
+                        <input type="hidden" name="dharma" value="Dharma"/>
+
+                        <label>Country</label>
+                        <select name="country">
+                            <option value="">--Choose--</option>
+                            <option value="NP" selected="selected" >Nepal</option>
+                            <option value="IN" >INDIA</option>
+                            <option value="BH" >Bhutan</option>
+                        </select> 
+                        <br/>
+
+                        <label>Comments</label>
+                        <textarea name="comments" rows="5" cols="40"></textarea>
+                        <br/>
+
+
+                    <input type="submit" name="submit" value="Register"/>
+                    <input type="reset" name="reset" value="Clear"/>
+                    <input type="button" name="close" value="Close" onclick="window.close()" />
+
+                    </fieldset>
+                </form>
+
 
             </td>
         </tr>
