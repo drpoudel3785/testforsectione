@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<form action="#" method="POST" name="registration">
+		<table border=0 cellpadding="5" cellspacing="5" width="600px">
+			<tr>
+				<td width="200px"><label>Enter your first name</label></td>
+				<td><input type="text" name="firstname" size="25" maxlength="50" placeholder="enter your first name" required="required" />
+				</td>
+			</tr>
+			<tr>
+				<td><label>Enter your last name</label></td>
+				<td><input type="text" name="lastname" size="25" maxlength="30" /> </td>
+			</tr>
+
+			<tr>
+				<td>Select your DOB</td>
+				<td><input type="date" name="dob"/></td>
+			</tr>
+			<tr>
+				<td>Select your Country</td>
+				<td>
+					<select name="country">
+						<option value="">Select Your Country</option>
+						<option value="NP">Nepal</option>
+						<option value="IN">India</option>
+						<option value="CN">China</option>
+					</select>
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" value="Save My Data" />
+					<input type="reset" name="reset" value="Reset Data" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
