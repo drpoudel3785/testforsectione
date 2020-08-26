@@ -1,12 +1,37 @@
 <html>
 <head>
 	<title>Registration Form</title>
+	<style>
+		/* Internal Stylesheet / Embedded Style Sheet */
+		/* Type Selector */
+			label{
+				color:green;
+				font-variant: small-caps;
+				}
+		/* class Selector */
+			.myheading{
+				color:green;
+				font-size:20px; 
+				margin:0px;
+				padding:0px;
+			}
+		/* ID Selector */
+	</style>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 </head>
 <body>
+	<h1 style="color:#00ff00; font-size:20px; border-bottom:2px dashed #dddccc; ">Registration Form</h1>
+	<h2 class="myheading">My Heading</h2>
+	<h3 class="myheading">My Third HEading</h3>
+
 	<form action="#" method="POST" name="registration">
 		<table border=0 cellpadding="5" cellspacing="5" width="600px">
 			<tr>
-				<td width="200px"><label>Enter your first name</label></td>
+				<td width="200px">
+
+					<label style="color:red; font-variant: small-caps;">Enter your first name</label>
+
+				</td>
 				<td><input type="text" name="firstname" size="25" maxlength="50" placeholder="enter your first name" required="required" />
 				</td>
 			</tr>
@@ -16,11 +41,11 @@
 			</tr>
 
 			<tr>
-				<td>Select your DOB</td>
+				<td><label>Select your DOB</label></td>
 				<td><input type="date" name="dob"/></td>
 			</tr>
 			<tr>
-				<td>Select your Country</td>
+				<td><label>Select your Country</label></td>
 				<td>
 					<select name="country">
 						<option value="">Select Your Country</option>

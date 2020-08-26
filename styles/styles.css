@@ -1,0 +1,48 @@
+/* Universal Selector*/
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background-color: #bbbbbb;
+}
+/* Grouping Selector */
+h1, h2, h3, h4, h5, h6{
+	font-variant: small-caps; font-weight: bolder;
+	color:#ffec43;
+}
+/* TYPE Selector */
+h1 { font-size:25px;  border-bottom:2px solid #ddccdd;}
+h2{font-size:20px;}
+h3{font-size:16px;}
+h4{font-size:12px;}
+h5{font-size:10px;}
+h6{font-size:8px;}
+/* Class Selector */
+.mypara{font-size:px; color: #ddccdd;}
+/* ID SELECTOR */
+#header{width:90%; background-color: #ddccdd; min-height:150px;}
+
+/* Type Selector */ 
+h2  {font-size:15px; color:rgba(250,0,0, 0.7) !important;}
+/* ID Selector */ 
+#container{
+	width:1140px;
+	min-height:800px;
+	border:2px solid #eeeeee;
+	margin:auto auto;
+}
+.bbottomp{
+	font-size:23px; color:#ff0000; border-bottom:1px groove #ffffff;
+}
+
+/* Decendent Selector */
+#footer{width:1140px; min-height:150px; background-color: #fcfcfc;}
+#footer ul{list-style-type:none; float:right;}
+#footer ul li{display:inline-block;}
+#footer ul li a{text-decoration:none;}
+#footer ul li a:hover{text-decoration:underline; background-color:#ddccdd;}
+
+/* Child SElector */
+#footer > h1{font-size:30px; color:green; }
