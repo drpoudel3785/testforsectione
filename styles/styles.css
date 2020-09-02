@@ -12,7 +12,6 @@ body{
 	background-color: #bbbbbb;
 	background-image:url('../images/bg.png');
 	background-repeat: no-repeat;
-	background-position: top right;
 	background-attachment: fixed;
 }
 /* Grouping Selector */
@@ -20,9 +19,10 @@ h1, h2, h3, h4, h5, h6{
 	font-family:'Titillium Web';
 	font-variant: small-caps; font-weight: bolder;
 	color:#ffec43;
+	text-transform: capitalize;
 }
 /* TYPE Selector */
-h1 { font-size:25px;  border-bottom:2px solid #ddccdd;}
+h1 { font-size:25px;  border-bottom:2px solid #ddccdd; letter-spacing: 10px;}
 h2{font-size:20px; font-family:'Lobster';}
 h3{font-size:16px;}
 h4{font-size:12px;}
@@ -63,3 +63,23 @@ h2  {font-size:15px; color:rgba(250,0,0, 0.7) !important;}
 	border:4px solid #ffec43;
 	border-radius:0px 30px 0px 0px;
 }
+
+.row{ min-height:10px; }
+.col100 { width:100%; }
+.col75 {width:75%; float:left;}
+.col50 { width:50%; float:left;}
+.col33 { width:33.33%; float: left; }
+.col25 { width: 25%; float:left; }
+
+#topnav{width:1140px; background-color:#ddccdd;}
+#topnav ul{list-style:none; padding:0px; }
+#topnav ul li { display: inline-block;}
+#topnav ul li a{text-decoration:none; display:block; padding: 10px 25px; color:#333;}
+#topnav ul li a:hover {text-decoration:overline; color:#333; background-color:#f3f3f3;}
+
+.box270{ width:270px; min-height:270px; border-radius:50%; background-color:#ecaaaa; opacity:0.7;}
+.box270:hover{
+	opacity:1;
+	border:2px groove #ffec43;
+}
+
