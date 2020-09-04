@@ -42,13 +42,16 @@ h2  {font-size:15px; color:rgba(250,0,0, 0.7) !important;}
 	border-left:2px dotted #ff0000;
 	border-right:2px dashed #ff0000;
 	margin:auto auto;
+	
 }
 .bbottomp{
 	font-size:23px; color:#ff0000; border-bottom:1px groove #ffffff;
 }
 
 /* Decendent Selector */
+
 #footer{width:1140px; min-height:150px; background-color: #fcfcfc;}
+#footer {position: relative; top:100px;}
 #footer ul{list-style-type:none; float:right;}
 #footer ul li{display:inline-block;}
 #footer ul li a{text-decoration:none;}
@@ -77,9 +80,20 @@ h2  {font-size:15px; color:rgba(250,0,0, 0.7) !important;}
 #topnav ul li a{text-decoration:none; display:block; padding: 10px 25px; color:#333;}
 #topnav ul li a:hover {text-decoration:overline; color:#333; background-color:#f3f3f3;}
 
-.box270{ width:270px; min-height:270px; border-radius:50%; background-color:#ecaaaa; opacity:0.7;}
+.box270{ width:270px; height:270px;  background-color:#ecaaaa; opacity:0.7;}
 .box270:hover{
 	opacity:1;
 	border:2px groove #ffec43;
 }
 
+#notice{position:absolute; top:200px; left:250px; width:500px; min-height:400px; background-color:#ecaaaa; z-index:9999;}
+
+#social{position:fixed; top:200px; right:0px; width:50px; min-height: 150px; background-color: #ff0000;}
+
+header{position:fixed; top:0px;background-color:rgba(250,0,0, 0.7); z-index:9999;}
+main{position: absolute; top:105px; z-index:9998;}
+footer{position:absolute; bottom:0px;}
+
+.auto{overflow:auto;}
+.scroll{overflow:scroll;}
+.hidden{overflow:hidden;}
