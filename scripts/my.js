@@ -68,9 +68,8 @@ function closeMe(){
    } 
 }
 
-function mulTable() {
-       var num =  parseInt(prompt("Enter the Number "))
-
+function mulTable(num) {
+       var num 
        /*
        for(i = 1; i <= 10; i++ )
        {
@@ -109,3 +108,48 @@ for ( i = 1; i <= 5; i++ ){
   }
     document.write("<br/>");
 }
+
+//function no parameter yes return type
+function sumT() {
+    num1 = 10;
+    num2 = 30;
+    total =  num1 + num2;
+    return total;
+  }
+
+//Function with parameter and Return type
+  function subT(num1, num2) {
+      su = num1 -  num2;
+      return su;
+  }
+
+  num1= "x4";
+  num2= 5;
+  sum =  eval(num1) + num2;
+  document.write("<br/>Again The sum is "+sum);
+
+
+  if(!isNaN(num1)) {
+      sum = num1 + num2;
+      alert("The sum is "+ sum)
+  }
+  else {
+      alert("Inputs incorrect!");
+  }
+
+  function startClock(){
+     setInterval(curTime, 1000);
+    curTime();
+  }
+  function curTime() {
+      var ti = new Date;
+      var hh = ti.getHours();
+      var mi = ti.getMinutes(); 
+      var ss = ti.getSeconds();
+
+      document.getElementById("hh").innerHTML=hh;
+      document.getElementById("mi").innerHTML=mi;
+      document.getElementById("ss").innerHTML=ss;
+  }
+
+

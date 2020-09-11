@@ -5,10 +5,12 @@
        //alert("Hello, Good Morning All");
     </script>
 </head>
-<body>
+<body onload="startClock()">
+
+    <div id="time"><span id="hh"></span>:<span id="mi"></span>:<span id="ss"></span></div>
 <button onclick="alert('Hello')" >Say Hello</button>
 <button onclick="closeMe()">Exit from this Page</button>
-<button onclick="mulTable()">Generate Multiplicatoin Table</button>
+<button onclick="mulTable(10)">Generate Multiplicatoin Table</button>
 
     <script>
         /*
@@ -19,6 +21,16 @@
     </script>
 
     <script src="scripts/my.js"></script>
+    <script>
+        
+        var s = sumT();
+        document.write("<br/>The sum is "+s);
+
+
+        var st = subT(20, 10);
+            document.write("<br/>The sub is "+st)
+        
+    </script>
     
 </body>
 </html>

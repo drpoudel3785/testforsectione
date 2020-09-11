@@ -97,3 +97,20 @@ footer{position:absolute; bottom:0px;}
 .auto{overflow:auto;}
 .scroll{overflow:scroll;}
 .hidden{overflow:hidden;}
+
+.responsive{width:100%; height:auto;}
+/* Media query for Tab*/
+@media screen and (max-width:768px){
+	body{background-color:#ff0000;}
+	#container{width:750px;}
+	.coltab100{width:100%;}
+	.coltab50{width:50%;float:left;}
+}
+
+/* Media query for Mobile Devices */
+@media screen and (max-width:480px)
+{
+	body{background-color:#ecaaaa;}
+	#container{width:450px;}
+	.colmob100{width:100%;}
+}
