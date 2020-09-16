@@ -6,8 +6,24 @@
     </script>
 </head>
 <body onload="startClock()">
+    <div id="loginError" style="color:#ff0000; "></div>
 
-    <div id="time"><span id="hh"></span>:<span id="mi"></span>:<span id="ss"></span></div>
+    <form name="login" action="#" name="login" onsubmit="return validateLogin()">
+        <fieldset><legend>Login</legend>
+          <input type="text" name="user" placeholder="Username" />
+          <input type="password" name="pass" placeholder="Password" />
+          <input type="submit" name="submit" value="Login"/>
+        </fieldset>
+    </form>
+
+    <div id="div1">The text above has been created dynamically.</div>
+
+
+    <button id="changebg" onclick="changeBg()">ChangeBG</button>
+    <img src="images/car1.png" alt="Car1" title="Car1" id="car1" onmouseover="bmw()" onmouseout="car()" />
+
+
+    <div id="time"><span id="hh">hh</span>:<span id="mi">mm</span>:<span id="ss">ss</span></div>
 <button onclick="alert('Hello')" >Say Hello</button>
 <button onclick="closeMe()">Exit from this Page</button>
 <button onclick="mulTable(10)">Generate Multiplicatoin Table</button>
