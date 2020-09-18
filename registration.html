@@ -56,8 +56,10 @@
                     </fieldset>
                 </form>
 
+                <div id="singUpError" style="color:red;"></div>
 
-                  <form action="#" name="register" method="POST">
+
+                  <form action="#" name="register" method="POST" onsubmit="return singupValidate()" >
                     <fieldset>
                         <legend>Register</legend>
                         <label>UserName</label>
@@ -66,7 +68,7 @@
                         <br/>
 
                         <label>Email</label>
-                        <input type="email" name="email" placeholder="you@domain.com" required="required" />
+                        <input type="text" name="email" placeholder="you@domain.com" required="required" />
                         <br/>
 
                         <label>Password</label>
@@ -122,5 +124,7 @@
             </td>
         </tr>
     </table>
+    <script src="scripts/my.js"> </script> 
+  
 </body>
 </html>

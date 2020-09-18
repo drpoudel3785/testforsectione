@@ -123,10 +123,10 @@ function sumT() {
       return su;
   }
 
-  num1= "x4";
-  num2= 5;
-  sum =  eval(num1) + num2;
-  document.write("<br/>Again The sum is "+sum);
+  //num1= "x4";
+  //num2= 5;
+  ///sum =  eval(num1) + num2;
+ // document.write("<br/>Again The sum is "+sum);
 
 
   if(!isNaN(num1)) {
@@ -195,6 +195,66 @@ function validateLogin() {
         document.login.user.focus();
         return false;
     }
+    else if(uname == "") {
+        document.getElementById("loginError").innerHTML="Username is required";
+        document.login.user.focus();
+        return false;
+    }
+   else if(upass == "") {
+        document.getElementById("loginError").innerHTML="Password is required";
+        document.login.pass.focus();
+        return false;
+    }
+    else if(uname=="ram" && upass=="ram123")
+    {
+        window.location.href="/welcome.html";
+        return false;
+    }
+    else{
+        document.getElementById("loginError").innerHTML="Username and Password is incorrect";
+        return false;
+    }
     return true;
 }
 
+
+function singupValidate(){
+    var uname = document.register.username.value;
+    var upass = document.register.password.value;
+    var uemail = document.register.email.value;
+
+    var filter = /^([a-zA-Z])+ {6,}$ /;
+    var validuname = uname.match(filter);
+
+    var passfilter = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+     var validpassword = upass.match(passfilter);   
+var emailfilter = /^\w+[\w-+\.]*\@\w+([-\.]\w+)*\.[a-zA-Z]{2,}$/ ;
+var validuemail= uemail.match(emailfilter);
+      if(validuname == null)
+    { 
+         document.getElementById("singUpError").innerHTML="Username must be a-z or A-Z only between 6 to 12 characters";
+         document.register.username.focus();
+         return false;
+    }
+    else if (validpassword == null)
+    {
+        document.getElementById("singUpError").innerHTML="Password Complexcity not Match";
+        document.register.password.focus();
+        return false;
+    }
+    else if (validuemail == null)
+    {
+        document.getElementById("singUpError").innerHTML="Email is not valid";
+        document.register.email.focus();
+        return false;
+    }
+    else
+    {
+        document.getElementById("singUpError").innerHTML="Validate Success";
+        return false;
+
+    }
+
+
+    return true;
+}
